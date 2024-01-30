@@ -2,7 +2,7 @@ function codificaTexto() {
   let textoCodificado = '';
   let textoCodificar = document.getElementById('texto-codificar').value;
 
-  if (/[A-Z\u00C0-\u00FF ]/.test(textoCodificar)) {
+  if (/[A-Z\u00C0-\u00FF]/.test(textoCodificar)) {
     alert('Apenas letras minúsculas e sem acento!');
     return;
   }
