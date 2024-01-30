@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="./app.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="apresentacao">
+        <header>
+          <img src="./assets/Logoalura.svg" alt="Logo alura" />
+        </header>
+        <div class="apresentacao__conteudo__container">
+          <textarea
+            name=""
+            id="texto-codificar"
+            placeholder="Digite seu texto"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <div>
+            <span>
+              <img
+                src="./assets/bi_exclamation-circle-fill.svg"
+                alt="icone exclamacao"
+              />
+              Apenas letras minúsculas e sem acento.
+            </span>
+            <div class="apresentacao__conteudo__botoes">
+              <button class="btn btn__primario" onclick="codificaTexto()">
+                Criptografar
+              </button>
+              <button class="btn btn__secundario" onclick="decodificaTexto()">
+                Descriptografar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="informacao" id="texto-vazio">
+        <img
+          src="./assets/High quality products 1 1.png"
+          alt="Menino com uma lupa olhando um diamante"
+        />
+        <h3>Nenhuma mensagem encontrada</h3>
+        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+      </div>
+      <div class="informacao" id="texto-preenchido" style="display: none">
+        <textarea name="" id="texto-codificado" cols="30" rows="10"></textarea>
+        <button class="btn btn__secundario" onclick="copiarTexto()">
+          Copiar
+        </button>
+      </div>
+    </main>
+    <footer>
+      <a href="https://github.com/dashboard"
+        >Criado por Bianca Caroline (Github) - 2024
+      </a>
+    </footer>
+  </body>
+</html>
